@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Made - Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0b1a33, #1c2f4a);
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 120px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #d1d1d1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #ffffff;
+    }
+
+    button {
+      padding: 12px;
+      background: #ffffff;
+      color: #0b1a33;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #dddddd;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    .contact-tab {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="Self Made Logo Dark 605x605.png" alt="Self Made Logo" class="logo">
+    <h1>Contact Self Made</h1>
+
+    <p class="description">
+      If you would like your account information deleted, please send a request using the form below or contact support directly.
+    </p>
+
+    <form action="mailto:selfmademealapp@gmail.com" method="POST" enctype="text/plain">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <footer>
+      <div class="contact-tab">
+        <strong>Contact:</strong><br>
+        selfmademealapp@gmail.com
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
